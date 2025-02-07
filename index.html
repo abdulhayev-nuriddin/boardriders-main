@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./images/logo.png">
+    <title>BOARDRIDERS</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-top">
+            <div class="yordam-container">
+                <img src="./images/lokatsiya.png" alt="lokatsiya" class="lokatsiya" width="14" height="20">
+                <label for="region" class="region-label">Ваш регион доставки:</label>
+                <select id="region">
+                    <option value="moskva">Москва</option>
+                    <option value="moskva">Москва</option>
+                </select>
+                <a href="#" class="linki">Магазины</a>
+                <a href="#" class="linki">Помощь</a>
+                <a href="#" class="linki">Блоги</a>
+            </div>
+            <div class="yetkazish-container">
+                <img src="./images/fura.png" alt="fura" class="fura" width="24" height="24">
+                <a href="#" class="linki">Бесплатная доставка *</a>
+                <img src="./images/Vector.png" alt="vector" class="vector" width="20" height="18">
+                <a href="#" class="linki">Оплата при получении</a>
+                <img src="./images/tolovni qaytarish.png" alt="tolov-qaytarish" class="tolov-qaytarish" width="20"
+                    height="20">
+                <a href="#" class="linki">Возврат в течение 14 дней</a>
+            </div>
+        </div>
+        <div class="container header-mid">
+            <nav class="navbar">
+                <a href="#" class="nav-link" onclick="activateTab(this, 'men')">Мужчинам</a>
+                <a href="#" class="nav-link" onclick="activateTab(this, 'women')">Женщинам</a>
+                <a href="#" class="nav-link" onclick="activateTab(this,'children')">Детям</a>
+            </nav>
+            <img src="./images/big logo.png" alt="big-logo" class="big-logo" width="242" height="50">
+            <div class="right">
+                <div class="l">
+                    <img src="./images/acc.png" alt="" width="24" height="24">
+                    <p class="text">ВОЙТИ</p>
+                </div>
+                <div class="l">
+                    <img src="./images/yulduz.png" alt="" width="24" height="23">
+                    <p class="text">ИЗБРАННОЕ</p>
+                </div>
+                <div class="l">
+                    <img src="./images/savat.png" alt="" class="" width="24" height="20">
+                    <p class="textt">КОРЗИНА</p>
+                </div>
+                <div class="l">
+                    <img src="./images/lupa.png" alt="" class="" width="24" height="24">
+                    <p class="texttt">ПОИСК</p>
+                </div>
+            </div>
+        </div>
+        <div class="container header-bottom">
+            <nav class="nav1">
+                <a href="#" class="header-links" onclick="setActive(this)">Новинки</a>
+                <a href="#" class="header-links" onclick="setActive(this)">Сноуборд</a>
+                <a href="#" class="header-links" onclick="setActive(this)">Лыжи</a>
+                <a href="#" class="header-links" onclick="setActive(this)">Скейт</a>
+                <a href="#" class="header-links" onclick="setActive(this)">Лонгборд</a>
+                <a href="#" class="header-links" onclick="setActive(this)">Вейкборд</a>
+                <a href="#" class="header-links" onclick="setActive(this)">Серф</a>
+                <a href="#" class="header-links" onclick="setActive(this)
+                ">Sup</a>
+                <a href="#" class="header-links" onclick="setActive(this)">Одежда</a>
+                <a href="#" class="header-links" onclick="setActive(this)">Обувь</a>
+                <a href="#" class="header-links" onclick="setActive(this)">Аксессуары</a>
+                <a href="#" class="header-links" onclick="setActive(this)">Бренды</a>
+                <a href="#" class="header-links" onclick="setActive(this)">Распродажа</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container slider-container">
+                <div class="slider" id="slider">
+                    <img src="./images/bigads.png" class="slide">
+                    <img src="./images/bigadsleft.png" class="slide">
+                    <img src="./images/bigadsright.png" class="slide">
+                </div>
+                <button class="btn prev" onclick="prevSlide()">❮</button>
+                <button class="btn next" onclick="nextSlide()">❯</button>
+            </div>
+            <div class="container logos-container">
+                <img src="./images/logos.png" alt="" class="logos">
+            </div>
+            <div class="container logos-bottom">
+                <img src="./images/twoads.png" alt="" class="bottom-logos" width="1340" height="340">
+            </div>
+        </section>
+        <section>
+            <div class="container shop-container">
+                <h1 class="shop-title">Новинки</h1>
+                <div class="boxes">
+                        <button class="slider-btn prev"
+                         onclick="prevSlide()">‹</button>                   
+                    <div class="boxx1">
+                        <div class="star" onclick="toggleStar(this)">★</div>
+                        <img src="./images/box1.png" alt="" class="boxx1-img">
+                        <h3 class="boxx1-title">LIB TECH</h3>
+                        <p class="boxx1-text">Мужской Сноуборд</p>
+                        <h3 class="boxx1-price">34392 ₽</h3>
+                    </div>
+                    <div class="boxx1">
+                        <div class="star" onclick="toggleStar(this)">★</div>
+                        <img src="./images/box2.png" alt="" class="boxx1-img">
+                        <h3 class="boxx1-title">LIB TECH</h3>
+                        <p class="boxx1-text">Мужской Сноуборд</p>
+                        <h3 class="boxx1-price">34392 ₽</h3>
+                    </div>
+                    <div class="boxx1">
+                        <div class="star" onclick="toggleStar(this)">★</div>
+                        <img src="./images/box3.png" alt="" class="boxx1-img">
+                        <h3 class="boxx1-title">LIB TECH</h3>
+                        <p class="boxx1-text">Мужской Сноуборд</p>
+                        <h3 class="boxx1-price">34392 ₽</h3>
+                    </div>
+                    <div class="boxx1">
+                        <div class="star" onclick="toggleStar(this)">★</div>
+                        <img src="./images/box4.png" alt="" class="boxx1-img">
+                        <h3 class="boxx1-title">LIB TECH</h3>
+                        <p class="boxx1-text">Мужской Сноуборд</p>
+                        <h3 class="boxx1-price">34392 ₽</h3>
+                    </div>
+                    <button class="slider-btn next"
+                     onclick="nextSlide()">›</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container shoe-container">
+                <div class="shoe-title">SHOE</div>
+                <img src="./images/shoe.png" alt="" class="shoe">
+                <h2 class="mini-title">Название Акции</h2>
+                <p class="shoe-text">Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих <br> устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность <br> этого перса в истории, являет собою противоположность как раз этому. </p>
+            </div>
+        </section>
+        <section>
+            <div class="container shop-container">
+                <h1 class="shop-title">DC Shoes популярное в коллекции</h1>
+                <div class="boxes">
+                        <button class="slider-btn prev"
+                         onclick="prevSlide()">‹</button>                   
+                    <div class="boxx1">
+                        <div class="star" onclick="toggleStar(this)">★</div>
+                        <img src="./images/box2.png" alt="" class="boxx1-img">
+                        <h3 class="boxx1-title">LIB TECH</h3>
+                        <p class="boxx1-text">Мужской Сноуборд</p>
+                        <h3 class="boxx1-price">34392 ₽</h3>
+                    </div>
+                    <div class="boxx1">
+                        <div class="star" onclick="toggleStar(this)">★</div>
+                        <img src="./images/shopshoe.png" alt="" class="boxx1-img">
+                        <h3 class="boxx1-title">LIB TECH</h3>
+                        <p class="boxx1-text">Мужской Сноуборд</p>
+                        <h3 class="boxx1-price">34392 ₽</h3>
+                    </div>
+                    <div class="boxx1">
+                        <div class="star" onclick="toggleStar(this)">★</div>
+                        <img src="./images/box3.png" alt="" class="boxx1-img">
+                        <h3 class="boxx1-title">LIB TECH</h3>
+                        <p class="boxx1-text">Мужской Сноуборд</p>
+                        <h3 class="boxx1-price">34392 ₽</h3>
+                    </div>
+                    <div class="boxx1">
+                        <div class="star" onclick="toggleStar(this)">★</div>
+                        <img src="./images/box4.png" alt="" class="boxx1-img">
+                        <h3 class="boxx1-title">LIB TECH</h3>
+                        <p class="boxx1-text">Мужской Сноуборд</p>
+                        <h3 class="boxx1-price">34392 ₽</h3>
+                    </div>
+                    <button class="slider-btn next"
+                     onclick="nextSlide()">›</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container video-container">
+                <div class="video-title">SHOE</div>
+                <div class="sector">
+                    <div class="video-section">
+                        <button class="video-button"><</button>
+                        <iframe width="650" height="645" src="https://www.youtube.com/embed/skU2ZNmiz0c?si=AaYV3U06YVmSCEKk" class="video-shop" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe >
+                    </div>
+                    <div class="text-section">
+                        <div class="flex">
+                            <h2 class="text-mini-title">Блоги</h2>
+                            <a href="" class="blog-link">Все блоги</a>
+                        </div>
+                        <div class="">
+                            
+                        </div>
+                        <h1 class="video-big-title">Очень преочень <br> длинное название блога</h1>
+                        <p class="video-text">Меня не спрашивали, а надо было спросить, что означает имя Заратустры <br> именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит <br> неслыханная уникальность этого перса в истории, являет собою <br> противоположность как раз этому.
+                        <br>Меня не спрашивали, а надо было спросить, что означает имя Заратустры <br> именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит <br> неслыханная уникальность этого перса в истории, являет собою <br> противоположность как раз этому.</p>
+                        <a href="" class="video-link">Читать продолжение</a>
+                    </div>
+                    <button class="video-button-right">></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container blogs-container">
+                <div class="cards">
+                    <div class="card1">
+                        <img src="./images/boardridersclub.png" alt="" class="br-club">
+                        <br>
+                        <br>
+                        <h1 class="cards-title">Программа лояльности</h1>
+                        <br>
+                        <p class="cards-text">Зарабатывайте баллы и получайте преимущества</p>
+                        <br>
+                        <input type="text" name="" id="" class="inp1">
+                    </div>
+                    <div class="card2">
+                        <img src="./images/email.png" alt="" class="email-img">
+                        <br>
+                        <br>
+                        <h1 class="cards-title">Скидка -10%</h1>
+                        <br>
+                        <p class="cards-text">За подписку на наши новости</p>
+                        <br>
+                        <div class="input-container">
+                            <input type="email" name="email" id="" placeholder="Email" class="inp2">
+                            <button type="submit" class="send-button2" aria-label="Send">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M2 21l21-9-21-9v7l15 2-15 2v7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ---------------------------------------------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container footer-top">
+            <img src="./images/logo.png" alt="" class="" width="57" height="55">
+            <h1 class="logo-title">BOARDRIDERS</h1>
+            <div class="email-container">
+                <input type="email" class="email-input" placeholder="Подпишись на рассылку и получи  -10%  скидку"
+                    required>
+                <button type="submit" class="send-button" aria-label="Send">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M2 21l21-9-21-9v7l15 2-15 2v7z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="container footer-mid">
+            <div class="">
+                <h3 class="mid-title">Доступ к ранним релизам в приложении </h3>
+                <div class="box1">
+                    <div class="yuklab-olish">
+                        <img src="./images/appstore.png" alt="" class="">
+                        <img src="./images/googleplay.png" alt="" class="">
+                    </div>
+                    <img src="./images/shtrixcode.png" alt="" class="shtrixcode">
+                </div>
+            </div>
+            <div class="box2">
+                <h3 class="mid-title">Контакты</h3>
+                <div class="tel">
+                    <img src="./images/tel.png" alt="" class="">
+                    <a href="tel:8 (800) 511-74-68 " class="tell">8 (800) 511-74-68 </a>
+                </div>
+                <br>
+                <p class="text1">Бесплатная горячая линия <br>
+                    Ежедневно с 9 до 21</p>
+                <div class="tel">
+                    <img src="./images/e-mail.png" alt="" class="" width="25" height="20">
+                    <h3 class="mid-title">Контактный Email</h3>
+                </div>
+                <p class="text1">info@brd.ru</p>
+            </div>
+            <ul class="list">
+                <li class="items">
+                    <h3 class="mid-title">Помощь</h3>
+                </li>
+                <br>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Доставка</a>
+                </li>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Оплата</a>
+                </li>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Возврат</a>
+                </li>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Отзывы (2290)</a>
+                </li>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Акции и скидки</a>
+                </li>
+            </ul>
+            <ul class="list">
+                <li class="items">
+                    <h3 class="mid-title">Компания</h3>
+                </li>
+                <br>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Контакты</a>
+                </li>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">О boardriders</a>
+                </li>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Вакансии</a>
+                </li>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Публичная оферта</a>
+                </li>
+            </ul>
+            <ul class="list">
+                <li class="items">
+                    <h3 class="mid-title">Boardriders Inc.</h3>
+                </li>
+                <br>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Франчайзинг</a>
+                </li>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Quiksilver</a>
+                </li>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Roxy</a>
+                </li>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">DC Shoes</a>
+                </li>
+                <br>
+                <li class="items">
+                    <a href="" class="footer-links">Boardriders Club</a>
+                </li>
+            </ul>
+        </div>
+        <div class="line1"></div>
+        <div class="container footer-bottom">
+            <div class="social-links">
+                <img src="./images/twitter.png" alt="" class="">
+                <img src="./images/facebook.png" alt="" class="">
+                <img src="./images/twitch.png" alt="" class="">
+                <img src="./images/youtube.png" alt="" class="">
+                <img src="./images/instagram.png" alt="" class="">
+            </div>
+            <p class="mualliflik-huquqi">© 2020 Brd.ru. Все права защищены</p>
+        </div>
+    </footer>
+    <script>
+        
+        function activateTab(element, tabName) {
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => link.classList.remove('active'));
+            element.classList.add('active');
+            localStorage.setItem('activeTab', tabName);
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeTab = localStorage.getItem('activeTab') || 'men';
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => {
+                if (link.textContent.toLowerCase() === activeTab) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        function setActive(link) {
+            let links = document.querySelectorAll('.nav1 .header-links');
+            links.forEach(function (item) {
+                item.classList.remove('active');
+            });
+            link.classList.add('active');
+        }
+        let index = 0;
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+
+        function showSlide() {
+            document.getElementById("slider").style.transform = `translateX(-${index * 1360}px)`;
+        }
+
+        function nextSlide() {
+            index = (index + 1) % totalSlides;
+            showSlide();
+        }
+
+        function prevSlide() {
+            index = (index - 1 + totalSlides) % totalSlides;
+            showSlide();
+        }
+        function toggleStar(element) {
+            element.classList.toggle("selected");
+        }
+
+        let currentIndex = 0;
+        const slider = document.getElementById("slider");
+        const totalItems = 12; // Jami mahsulotlar soni
+        const itemsPerSlide = 4; // Har safar 4 tadan ko‘rsatamiz
+        const maxIndex = Math.ceil(totalItems / itemsPerSlide) - 1; // Eng oxirgi indeks
+
+        function updateSlider() {
+            const translateX = -currentIndex * (321 * itemsPerSlide + 10 * itemsPerSlide);
+            slider.style.transform = `translateX(${translateX}px)`;
+        }
+
+        function nextSlide() {
+            if (currentIndex < maxIndex) {
+                currentIndex++;
+                updateSlider();
+            }
+        }
+
+        function prevSlide() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlider();
+            }
+        }
+    </script>
+</body>
+
+</html>
