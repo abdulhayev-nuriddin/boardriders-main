@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="./images/logo.png">
     <title>BOARDRIDERS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
                     <label for="region" class="region-label">Ваш регион доставки:</label>
                     <select id="region">
                         <option value="moskva">Москва</option>
-                        <option value="moskva">Москва</option>
+                        <option value="moskva">Петербург</option>
                     </select>
                     <a href="#" class="linki">Магазины</a>
                     <a href="#" class="linki">Помощь</a>
@@ -44,20 +45,16 @@
             <img src="./images/big logo.png" alt="big-logo" class="big-logo" width="242" height="50">
             <div class="right">
                 <div class="l">
-                    <img src="./images/acc.png" alt="" width="24" height="24">
-                    <p class="text">ВОЙТИ</p>
+                    <button class="icons-btn"><span class="material-icons">person</span> ВОЙТИ</button>
                 </div>
                 <div class="l">
-                    <img src="./images/yulduz.png" alt="" width="24" height="23">
-                    <p class="text">ИЗБРАННОЕ</p>
+                    <button class="icons-btn"><span class="material-icons">star</span> ИЗБРАННОЕ</button>
                 </div>
                 <div class="l">
-                    <img src="./images/savat.png" alt="" class="" width="24" height="20">
-                    <p class="textt">КОРЗИНА</p>
+                    <button class="icons-btn"><span class="material-icons">shopping_cart</span> КОРЗИНА</button>
                 </div>
                 <div class="l">
-                    <img src="./images/lupa.png" alt="" class="" width="24" height="24">
-                    <p class="texttt">ПОИСК</p>
+                    <button class="icons-btn"><span class="material-icons">search</span> ПОИСК</button>
                 </div>
             </div>
         </div>
@@ -86,8 +83,8 @@
             <div class="container slider-container">
                 <div class="slider" id="slider">
                     <img src="./images/bigads.png" class="slide">
-                    <img src="./images/bigadsleft.png" class="slide">
-                    <img src="./images/bigadsright.png" class="slide">
+                    <img src="./images/bigads.png" class="slide">
+                    <img src="./images/bigads.png" class="slide">
                 </div>
                 <button class="btn prev" onclick="prevSlide()">❮</button>
                 <button class="btn next" onclick="nextSlide()">❯</button>
@@ -103,8 +100,7 @@
             <div class="container shop-container">
                 <h1 class="shop-title">Новинки</h1>
                 <div class="boxes">
-                        <button class="slider-btn prev"
-                         onclick="prevSlide()">‹</button>                   
+                    <button class="slider-btn prev" onclick="prevSlide()">‹</button>
                     <div class="boxx1">
                         <div class="star" onclick="toggleStar(this)">★</div>
                         <img src="./images/box1.png" alt="" class="boxx1-img">
@@ -133,8 +129,7 @@
                         <p class="boxx1-text">Мужской Сноуборд</p>
                         <h3 class="boxx1-price">34392 ₽</h3>
                     </div>
-                    <button class="slider-btn next"
-                     onclick="nextSlide()">›</button>
+                    <button class="slider-btn next" onclick="nextSlide()">›</button>
                 </div>
             </div>
         </section>
@@ -143,15 +138,16 @@
                 <div class="shoe-title">SHOE</div>
                 <img src="./images/shoe.png" alt="" class="shoe">
                 <h2 class="mini-title">Название Акции</h2>
-                <p class="shoe-text">Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих <br> устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность <br> этого перса в истории, являет собою противоположность как раз этому. </p>
+                <p class="shoe-text">Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих
+                    <br> устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность <br> этого
+                    перса в истории, являет собою противоположность как раз этому. </p>
             </div>
         </section>
         <section>
             <div class="container shop-container">
                 <h1 class="shop-title">DC Shoes популярное в коллекции</h1>
                 <div class="boxes">
-                        <button class="slider-btn prev"
-                         onclick="prevSlide()">‹</button>                   
+                    <button class="slider-btn prev" onclick="prevSlide()">‹</button>
                     <div class="boxx1">
                         <div class="star" onclick="toggleStar(this)">★</div>
                         <img src="./images/box2.png" alt="" class="boxx1-img">
@@ -180,8 +176,7 @@
                         <p class="boxx1-text">Мужской Сноуборд</p>
                         <h3 class="boxx1-price">34392 ₽</h3>
                     </div>
-                    <button class="slider-btn next"
-                     onclick="nextSlide()">›</button>
+                    <button class="slider-btn next" onclick="nextSlide()">›</button>
                 </div>
             </div>
         </section>
@@ -190,8 +185,9 @@
                 <div class="video-title">SHOE</div>
                 <div class="sector">
                     <div class="video-section">
-                        <button class="video-button"><</button>
-                        <iframe width="650" height="645" src="https://www.youtube.com/embed/skU2ZNmiz0c?si=AaYV3U06YVmSCEKk" class="video-shop" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe >
+                        <button class="video-button">
+                            << /button>
+                                <!-- <iframe width="650" height="645" src="https://www.youtube.com/embed/skU2ZNmiz0c?si=AaYV3U06YVmSCEKk" class="video-shop" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe > -->
                     </div>
                     <div class="text-section">
                         <div class="flex">
@@ -199,11 +195,16 @@
                             <a href="" class="blog-link">Все блоги</a>
                         </div>
                         <div class="">
-                            
+
                         </div>
                         <h1 class="video-big-title">Очень преочень <br> длинное название блога</h1>
-                        <p class="video-text">Меня не спрашивали, а надо было спросить, что означает имя Заратустры <br> именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит <br> неслыханная уникальность этого перса в истории, являет собою <br> противоположность как раз этому.
-                        <br>Меня не спрашивали, а надо было спросить, что означает имя Заратустры <br> именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит <br> неслыханная уникальность этого перса в истории, являет собою <br> противоположность как раз этому.</p>
+                        <p class="video-text">Меня не спрашивали, а надо было спросить, что означает имя Заратустры <br>
+                            именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит <br> неслыханная
+                            уникальность этого перса в истории, являет собою <br> противоположность как раз этому.
+                            <br>Меня не спрашивали, а надо было спросить, что означает имя Заратустры <br> именно в моих
+                            устах — в устах первого имморалиста: ведь то, в чём состоит <br> неслыханная уникальность
+                            этого перса в истории, являет собою <br> противоположность как раз этому.
+                        </p>
                         <a href="" class="video-link">Читать продолжение</a>
                     </div>
                     <button class="video-button-right">></button>
@@ -235,7 +236,7 @@
                             <input type="email" name="email" id="" placeholder="Email" class="inp2">
                             <button type="submit" class="send-button2" aria-label="Send">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M2 21l21-9-21-9v7l15 2-15 2v7z" />
+                                    <path d="M2 21l21-9-21-9v7l15 2-15 2v7z" />
                                 </svg>
                             </button>
                         </div>
@@ -245,7 +246,7 @@
         </section>
     </main>
 
-<!-- ---------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------------- -->
 
     <footer class="footer">
         <div class="container footer-top">
@@ -267,8 +268,12 @@
                 <h3 class="mid-title">Доступ к ранним релизам в приложении </h3>
                 <div class="box1">
                     <div class="yuklab-olish">
-                        <img src="./images/appstore.png" alt="" class="">
-                        <img src="./images/googleplay.png" alt="" class="">
+                        <a href="https://www.apple.com/app-store/" target="_blank" class="">
+                            <img src="./images/appstore.png" alt="" class="">
+                        </a>
+                        <a href="https://play.google.com" target="_blank" class="">
+                            <img src="./images/googleplay.png" alt="" class="">
+                        </a>
                     </div>
                     <img src="./images/shtrixcode.png" alt="" class="shtrixcode">
                 </div>
@@ -366,85 +371,26 @@
         <div class="line1"></div>
         <div class="container footer-bottom">
             <div class="social-links">
-                <img src="./images/twitter.png" alt="" class="">
-                <img src="./images/facebook.png" alt="" class="">
-                <img src="./images/twitch.png" alt="" class="">
-                <img src="./images/youtube.png" alt="" class="">
-                <img src="./images/instagram.png" alt="" class="">
+                <a href="https://twitter.com" target="_blank" class="fn-links"><img src="./images/twitter.png" alt=""
+                        class="">
+                </a>
+                <a href="https://facebook.com" target="_blank" class="">
+                    <img src="./images/facebook.png" alt="" class="">
+                </a>
+                <a href="https://www.twitch.tv" target="_blank" class="">
+                    <img src="./images/twitch.png" alt="" class="">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="">
+                    <img src="./images/youtube.png" alt="" class="">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="">
+                    <img src="./images/instagram.png" alt="" class="">
+                </a>
             </div>
             <p class="mualliflik-huquqi">© 2020 Brd.ru. Все права защищены</p>
         </div>
     </footer>
-    <script>
-        
-        function activateTab(element, tabName) {
-            const links = document.querySelectorAll('.nav-link');
-            links.forEach(link => link.classList.remove('active'));
-            element.classList.add('active');
-            localStorage.setItem('activeTab', tabName);
-        }
-        document.addEventListener('DOMContentLoaded', () => {
-            const activeTab = localStorage.getItem('activeTab') || 'men';
-            const links = document.querySelectorAll('.nav-link');
-            links.forEach(link => {
-                if (link.textContent.toLowerCase() === activeTab) {
-                    link.classList.add('active');
-                }
-            });
-        });
-        function setActive(link) {
-            let links = document.querySelectorAll('.nav1 .header-links');
-            links.forEach(function (item) {
-                item.classList.remove('active');
-            });
-            link.classList.add('active');
-        }
-        let index = 0;
-        const slides = document.querySelectorAll(".slide");
-        const totalSlides = slides.length;
-
-        function showSlide() {
-            document.getElementById("slider").style.transform = `translateX(-${index * 1360}px)`;
-        }
-
-        function nextSlide() {
-            index = (index + 1) % totalSlides;
-            showSlide();
-        }
-
-        function prevSlide() {
-            index = (index - 1 + totalSlides) % totalSlides;
-            showSlide();
-        }
-        function toggleStar(element) {
-            element.classList.toggle("selected");
-        }
-
-        let currentIndex = 0;
-        const slider = document.getElementById("slider");
-        const totalItems = 12; // Jami mahsulotlar soni
-        const itemsPerSlide = 4; // Har safar 4 tadan ko‘rsatamiz
-        const maxIndex = Math.ceil(totalItems / itemsPerSlide) - 1; // Eng oxirgi indeks
-
-        function updateSlider() {
-            const translateX = -currentIndex * (321 * itemsPerSlide + 10 * itemsPerSlide);
-            slider.style.transform = `translateX(${translateX}px)`;
-        }
-
-        function nextSlide() {
-            if (currentIndex < maxIndex) {
-                currentIndex++;
-                updateSlider();
-            }
-        }
-
-        function prevSlide() {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateSlider();
-            }
-        }
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
